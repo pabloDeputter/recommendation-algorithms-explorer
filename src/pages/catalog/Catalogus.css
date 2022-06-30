@@ -1,0 +1,25 @@
+
+.center-col {
+    flex: 1;
+    background: #faf7f7;
+    overflow: scroll;
+    height: 80vh;
+}
+
+.ListItem-img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,87 @@
+% !TeX spellcheck = nl_NL
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Tussentijds rapport 1 \arabic{team}}
+		\moderation{Robin Dillen (Co\"ordinator)}
+		\minutetaker{Robin Dillen}
+		\participant{Cédric Leclercq, Elias Dams, Pablo Deputter, Robin Dillen}
+		\missingExcused{Robbe Nooyens}
+		\missingNoExcuse{\ldots}
+%		\guest{\ldots}
+		\minutesdate{13 maart 2022}
+		\starttime{14u}
+		\endtime{15}
+		
+		\maketitle
+		
+		
+		
+		\topic{Afgewerkte taken}
+			\subtopic{Cédric Leclercq}
+				\task*[done]{product overview}
+            
+            \subtopic{Pablo Deputter}
+                \task*[done]{}
+                
+            \subtopic{Elias Dams}
+                \task*[done]{catalogus overview}
+                \task*[done]{Login page}
+                
+            \subtopic{Robbe Nooyens}
+                \task*[done]{Welcome page}
+                
+            \subtopic{Robin Dillen}
+                \task*[done]{dashboard: navbar}
+                \task*[done]{A/B test overview}
+                \task*[done]{ER diagram}
+                
+        \topic{ER diagram}
+            \includegraphics[scale=0.30]{ER_diagram.png}
+
+		\newpage
+		\topic{web interface}
+		    \emph{Voor de web interface maken we gebruik van react en react-bootstrap. React heeft een ingebouwde server die we gebruiken voor de web interface te developen. We hebben de verschillende pages die we wouden opgedeeld onder de groep zodat iedereen aan een paar pages kon werken, maar zodat ook niemand aan de zelfde page bezig moest zijn. \\
+		    
+		    De verschillende pagina's die we tot nu toe hebben zijn een Home pagina, inlog pagina, Dashboard pagina. In de dashboard pagina is het de bedoeling dat verschillende andere pagina's ge-embed worden (zoals de catalogus overview, product overview, A/B tests)}
+		    
+		\topic{Backend/API}
+		    \emph{Voor de backend maken we gebruik van een flask server. Deze flask server linkt in productie ook de fontend react pagina's met gunicorn. Voor de connectie tussen nginx en gunicorn gebruiken we de configuratie van de template app.}
+		    
+		\topic{Functionaliteit}
+			\emph{De front-end paginas zijn gedesigned en gelinkt met elkaar. Men kan dus door de verschillende paginas klikken en deze bekijken. Er is ook dummy data op de pagina's om deze in te vullen. Het ER diagram voor de database is gemaakt, maar deze is nog niet gelinkt met de front-end. De database is al wel gelinkt met de backend.}
+
+
+        
+		
+		
+	\end{Minutes}	
+\end{document}

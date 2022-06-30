@@ -1,0 +1,149 @@
+% !TeX spellcheck = nl_NL
+
+\documentclass[a4paper]{article}
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+\usepackage{blindtext} %This package generates automatic text
+\usepackage{epigraph} 
+
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Wekelijks Verslag Team \arabic{team}}
+		\moderation{Robin Dillen (Co\"ordinator)}
+		\minutetaker{Pablo Deputter}
+		\participant{Pablo Deputter, Cédric Leclerq, Robin Dillen, Elias Dams en Robbe Nooyens}
+		\missingNoExcuse{\ldots}
+		\missingExcused{\ldots}
+		\minutesdate{18 mei 2022}
+		\starttime{11}
+		\endtime{11u45}
+		
+		\maketitle
+
+		\topic{Status}
+			\emph{Overloop status taken, afgesproken tijdens vorige vergadering.}
+			
+				
+			\subtopic{Issue: \#53 A/B-test pagina (Elias Dams)}
+		\task*[pending]{Parameters van algo's + restyling 22/05/2022}
+                \task*[pending]{Totaal aankopen over tijd 22/05/2022}
+                \task*[pending]{Active users, toevoegen van ctr 22/05/2022} 
+                \task*[pending]{AR@D 22/05/2022}
+                \task*[pending]{ARPU@D 22/05/2022}
+                \task*[pending]{Top-k meest aanbevolen items per algoritme, bug fixen met parameter k 22/05/2022}        
+                
+			\subtopic{Issue: \#20 Accounts: Registratie en login (Robbe Nooyens en Cédric Leclercq)}
+				\task*[pending]{Admin vs User 20/05/2022}				
+				\task*[pending]{Front-end authorization 20/05/2022}
+				\task*[pending]{Redirect naar login als men niet ingelogd is + vice versa wel naar ingelogd naar dashboard 20/05/2022}	
+				
+			\subtopic{Queries (Robin Dillen)}
+				\task*[done]{CTR voor user in tabel 20/05/2020}	
+				\task*[done]{CTR voor user in grafiek 20/05/2020}	
+				\task*[done]{Recommendations voor een item per time per algo per test 20/05/2020}	
+				\task*[pending]{Correct recommendations per time per algoritme per test 20/05/2020}													
+				\task*[pending]{Metadata van item opvragen 20/05/2020}					
+				\task*[pending]{Metadata van user opvragen 20/05/2020}									
+				\task*[pending]{Totaal aankopen over tijd voor een test in grafiek per dag 20/05/2020}									
+				\task*[done]{CTR per algoritme voor grafiek 20/05/2020}									
+				\task*[pending]{ARD 20/05/2020}													
+				\task*[pending]{ARPUR 20/05/2020}													
+				\task*[pending]{CTR met step-size $>$ 1 20/05/2020}	
+
+
+			\subtopic{Issue: \#33 Item pagina (Pablo Deputter)}
+				\task*[not started]{foto's van de producten + metadata ondersteunen 22/05/2022}
+				\task*[not started]{restyling naar gelijkaardige pagina zoals user pagina 22/05/2022}
+				\task*[not started]{Aanbevolen items 22/05/2022}
+				\task*[not started]{Correct aanbevolen items 22/05/2022}				
+				\task*[not started]{Populariteit van items 22/05/2022}								
+				\task*[not started]{Aparte route van test 22/05/2022}						
+				
+			\subtopic{Issue: \#32 User pagina (Pablo Deputter)}
+				\task*[not started]{Metadata tonen 24/05/2022}
+				\task*[not started]{ctr 24/05/2022}				
+				\task*[not started]{Aparte route voor test 24/05/2022}
+
+			\subtopic{Render test pagina (Cédric)}
+				\task*[not started]{ETA and duration tonen 22/05/2022}
+				
+			\subtopic{Tests (Cédric)}
+				\task*[not started]{Algoritmes testen 22/05/2022}				
+				\task*[not started]{Popularity in query schrijven 22/05/2022}								
+				\task*[not started]{Recency in query schrijven 22/05/2022}
+				\task*[pending]{Testen met grote files continu Cédric}												
+
+			\subtopic{\textbf{Documentatie} (iedereen)}
+				\task*[not started]{Documentatie van code}
+				\task*[not started]{Testen van site met grote datasets}				
+				\task*[not started]{Verslag schrijven}			                   
+				
+			\subtopic{Issue: \#52 metadatasets ondersteunnen backend (Robbe Nooyens)}
+				\task*[pending]{het uploaden van metadataset ondersteunen 20/05/2022}
+				\task*[not started]{restrictions zetten op wa ge kunt uploaden 20/05/2022}
+				\task*[not started]{bug: gewone tekst (beschrijving van item in item metadata) wordt in CSV file ook gesplit 20/05/2022}				
+				\task*[not started]{types weten van metadata? 20/05/2022}	
+				
+			\subtopic{Issue: \#14  Uploaden dataset (Robbe Nooyens)}
+				\task*[pending]{files uploaden sneller maken 20/05/2020}
+										
+			
+	
+        \topic{Quotes}
+\epigraph{The result is irrelevant because the effort was there.}{\textit{Pablo Deputter }}
+\epigraph{The more we can encourage participation, I think the better of we are.}{\textit{Cédric Leclercq \\ Barack Obama }}			
+\epigraph{A? for effort}{\textit{Robin Dillen }}	
+\epigraph{Hard work never killed anybody, but why take a chance.}{\textit{Elias Dams }}	
+\epigraph{It is whats it iiss.}{\textit{Robbe Nooyens }}	
+\epigraph{You need a little bit of rain to have a little bit of rainbow.}{\textit{Pablo Deputter }}	
+			
+
+
+			
+		\topic{Mededeling}
+			\emph{Deadline rapport 18 mei.}\\
+
+		
+
+			
+		
+		\blfootnote{
+			\href{%
+				mailto:joey.depauw@uantwerpen.be%
+				?subject=PPDB 2021-2022: Wekelijks Verslag Team \arabic{team}%
+				&body=Liefste Joey\%0D\%0A%
+				\%0D\%0A%
+				Gelieve ons wekelijks verslag terug te vinden in de bijlage.\%0D\%0A%
+				\%0D\%0A%
+				Groetjes\%0D\%0A%
+				Team \arabic{team}\%0D\%0A%
+			}{Klik hier} om mij op te sturen.
+		}
+		
+		
+	\end{Minutes}	
+\end{document}

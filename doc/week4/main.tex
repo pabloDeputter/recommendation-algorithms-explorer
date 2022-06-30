@@ -1,0 +1,134 @@
+% !TeX spellcheck = nl_NL
+
+\documentclass[a4paper]{article}
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Wekelijks Verslag Team \arabic{team}}
+		\moderation{Robbe Nooyens (Co\"ordinator)}
+		\minutetaker{Elias Dams}
+		\participant{Elias Dams, Pablo Deputter, Robbe Nooyens, Cédric Leclercq en Robin Dillen}
+		\missingNoExcuse{\ldots}
+		\missingExcused{\ldots}
+		\minutesdate{22 maart 2022}
+		\starttime{14}
+		\endtime{15u}
+		
+		\maketitle
+		
+		
+		\topic{Technologiën}
+		Technologiën die we gebruiken:
+		\begin{itemize}
+		    \item Flask + Python voor de webserver en backend
+		    \item React voor de frontend
+		    \item Bootstrap als css framework of styling
+		    \item Matplotlib als dit mogelijk is anders gebruiken we Google charts
+		    \item Om onze API's te testen maken we gebruik van Apiary
+		    \item We zullen gebruik maken van Github om version control toe te passen
+		    \item Voorlopig hebben we beslist om PyTest voor de testen
+		    \item Voor het plannen van het project en taken op te leggen gebruiken we Trello
+		\end{itemize}
+		
+		\topic{Status}
+			\emph{Overloop status taken, afgesproken tijdens vorige vergadering.}
+		
+			\subtopic{Taken (iedereen)}
+				\task*[pending]{apiary.io API testing}
+				\task*[pending]{Design pattern decisions}
+				\task*[pending]{Back-end design}
+				\task*[pending]{Database design en verbinden}
+				\task*[done]{Uittekenen van volledige GUI}
+				\task*[done]{Eerste tussentijds rapport DEADLINE 13/03/2022}
+				\task*[done]{Front-end design}
+				\task*[done]{Template webapp werkend krijgen DEADLINE 01/03/2022}
+				\task*[done]{Documentatie bekijken van technologiën}
+			
+			\subtopic{Taken (Elias Dams) DEADLINE 13/03/2022}
+				\task*[done]{login}
+				\task*[done]{main page sidebar}
+				\task*[done]{A/B test overview}
+				
+			\subtopic{Taken (Robbe Nooyens) DEADLINE 13/03/2022}
+				\task*[done]{Home page}
+				\task*[done]{catalogus: product overview}
+				\task*[done]{A/B test overview}
+				
+			\subtopic{Taken (Pablo deputter) DEADLINE 13/03/2022}
+				\task*[done]{main page sidebar}
+				\task*[done]{catalogus: overview}
+				\task*[done]{A/B test overview}
+				
+			\subtopic{Taken (Cédric Leclercq) DEADLINE 13/03/2022}
+				\task*[done]{main}
+				\task*[done]{catalogus: product overview}
+				\task*[done]{A/B test overview}
+				
+			\subtopic{Taken (Robin Dillen) DEADLINE 13/03/2022}
+				\task*[done]{main}
+				\task*[done]{catalogus: overview}
+				\task*[done]{A/B test overview}
+			
+
+
+			
+		\topic{Besproken Onderwerpen}
+		    \subtopic{vorige week}
+			\emph{Vorige vergadering hebben we iedereen een bepaald element van de front-end laten maken. Elk lid heeft dit ook tot een goed einde gebracht.}
+			
+			\subtopic{deze week}
+			\emph{We hebben een excel document gemaakt met alle nog af te werken taken. In dit document staat ook gespecifieerd welke API calls we denken te maken bij elke page. Op deze manier krijgen we een overzicht van ons project en kunnen we makkelijk de volgorde van de taken bepalen.}
+
+		
+		\topic{Afspraken \& Planning}
+			\emph{De planning is om nu de taken, opgesomd in het excel bestand, af te werken volgens de planning opgesteld in het eerste tussentijdse rapport. }
+		
+		
+		\topic{Varia}
+			\emph{Eventuele varia punten.}\\
+
+			
+
+		
+		\blfootnote{
+			\href{%
+				mailto:joey.depauw@uantwerpen.be%
+				?subject=PPDB 2021-2022: Wekelijks Verslag Team \arabic{team}%
+				&body=Liefste Joey\%0D\%0A%
+				\%0D\%0A%
+				Gelieve ons wekelijks verslag terug te vinden in de bijlage.\%0D\%0A%
+				\%0D\%0A%
+				Groetjes\%0D\%0A%
+				Team \arabic{team}\%0D\%0A%
+			}{Klik hier} om mij op te sturen.
+		}
+		
+		
+	\end{Minutes}	
+\end{document}

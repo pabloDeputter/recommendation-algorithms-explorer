@@ -1,0 +1,231 @@
+.test-card {
+    border-radius: 10px 10px 5px 5px;
+    border: 0;
+    -webkit-box-shadow: 0 0 14px #e7e7e7;
+    box-shadow: 0 0 14px #e7e7e7;
+    word-wrap: break-word;
+}
+
+.test-card-img {
+    max-height: 200px;
+    margin: auto;
+}
+
+.test-card-body {
+    text-align: center;
+}
+
+.test-card-header {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #5078CD;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.test-card-algorithm {
+    font-size: medium;
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.test-card-footer {
+    justify-content: center;
+
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #e0e0e0;
+
+    background: transparent;
+}
+
+.test-card-algorithms {
+    justify-content: center;
+
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #e0e0e0;
+
+    background: transparent;
+
+    visibility: hidden;
+    position: absolute;
+}
+
+.test-card-algorithms.open {
+    position: static;
+    visibility: visible;
+    transition: 1s ease-out;
+}
+
+.test-card-button {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.test-card-icon {
+    height: 22px;
+    width: 22px;
+    transition: transform .40s ease-in-out;
+}
+
+.test-card-icon.open {
+    transform-origin: center;
+    transform: translateX(-0px) rotate(180deg);
+}
+
+.test-card-algorithms.open {
+    display: inline;
+    transition: all 3s;
+}
+
+.test-card-metadata {
+    text-align: center;
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 5px;
+
+    background: #f1f1f1;
+}
+
+.test-card-metadata-key {
+    font-size: smaller;
+    color: #2a2a2a;
+}
+
+.test-card-metadata-val {
+    color: black;
+    font-weight: 600;
+}
+
+.test-card-algorithm {
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.test-card-algorithm-name {
+    font-weight: 600;
+    text-align: center;
+    color: #5078CD;
+}
+
+.test-card-parameter {
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 5px;
+
+    background: #f1f1f1;
+}
+
+.test-card-parameter-key {
+    font-size: smaller;
+    color: #2a2a2a;
+}
+
+.test-card-parameter-val {
+    color: black;
+    font-weight: 600;
+}
+
+.test-card-links {
+    display: grid;
+
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 5px;
+
+    background: #f1f1f1;
+}
+
+.test-card-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
+}
+
+
+.card-button-1 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: #7ce117;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-2 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: #07c89b;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-3 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: #11a0c1;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-4 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: #0a909f;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-5 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: #5259ab;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-6 {
+    border-radius: 10px 10px 10px 10px;
+    max-height: 50px;
+    background-color: rgba(25, 39, 159, 0.39);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button-1:hover {
+    cursor: pointer;
+}
+
+.card-button-2:hover {
+    cursor: pointer;
+}
+
+.card-button-3:hover {
+    cursor: pointer;
+}
+
+.card-button-4:hover {
+    cursor: pointer;
+}
+
+.card-button-5:hover {
+    cursor: pointer;
+}
+
+.card-button-6:hover {
+    cursor: pointer;
+}
+
+.hover_:hover {
+    cursor: pointer;
+}

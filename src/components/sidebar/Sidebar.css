@@ -1,0 +1,124 @@
+/* text : '#000000',
+text_secondary : '#3d3d3d',
+text_dark : '#b8b8b8',
+text_dark_secondary : '#ffffff',
+primary_c : '#ededed',
+primary_c_dark : '#202020',
+secondary_c : '#D6D6D6',
+secondary_c_dark : '#2a2a2a',
+accent : '#8f6be3',
+accent_dark : '#6930C3' */
+
+.sidebar {
+    min-width: 190px;
+    max-width: 220px;
+    height: 100vh;
+
+
+    /* transform: scale(0); */
+    margin-left: -220px;
+
+    background: #f7f9fb;
+
+    /* box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12); */
+
+    /* border-top-right-radius: 3px; */
+    /* border-bottom-right-radius: 3em; */
+
+    transition: all .5s;
+}
+
+.sidebar.open {
+    margin-left: -10px;
+    transform: scale(1);
+
+    transition: .5s;
+}
+
+.sidebar-item {
+    display: inline-flex;
+    margin-top: 1em;
+
+    color: #000000;
+    font-weight: bold;
+}
+
+.sidebar-item:hover {
+    background-color: #f2f4f7;
+}
+
+.sidebar-menu {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.sidebar-menu-item {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 0.75em;
+    margin-left: 1.5em;
+}
+
+.sidebar-menu-item:hover {
+    background-color: #f2f4f7;
+}
+
+.sidebar-menu-icon {
+    color: #000000;
+}
+
+.sidebar-toggle-icon {
+    height: 1.75em;
+    width: 1.75em;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-toggle {
+    position: relative;
+    height: 1.25em;
+    width: 1.25em;
+    top: 10px;
+    left: 100px;
+    z-index: 999;
+    float: right;
+
+    background-color: #f7f9fb;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 0px .25em .25em 0px;
+
+    transition: transform .5s ease-in-out;
+}
+
+.sidebar-toggle.closed {
+    transform-origin: center;
+    transform: translateX(-0px) rotate(180deg);
+}
+
+.nav-item {
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: 600;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-icon {
+    color: #000000;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.75em;
+}

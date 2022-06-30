@@ -1,0 +1,109 @@
+@media all and (min-width: 500px) {
+
+    .BackgroundImg {
+        background-image: url("../../assets/login_background.jpg");
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        max-width: 380px;
+    }
+
+    .Box_login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        height: 450px;
+        width: 920px;
+        border: 2px solid #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffffff;
+    }
+
+    .Box_register {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        height: 500px;
+        width: 920px;
+        border: 2px solid #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffffff;
+    }
+
+    .welcome {
+        color: #727375;
+    }
+
+    .width_login {
+        min-width: 19rem !important;
+        margin-left: 20px;
+    }
+
+    .width_register {
+        min-width: 26rem !important;
+        margin-left: 20px;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+
+    .BackgroundImg {
+        background-image: url("../../assets/login_background.jpg");
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .Box_login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        padding: 25px;
+        width: 300px;
+        border: 2px solid #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffffff;
+    }
+
+    .Box_register {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        padding: 25px#;
+        width: 300px;
+        border: 2px solid #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffffff;
+    }
+
+}
+
+.btn-primary {
+    background-color: #5078CD !important;
+    border-color: #5078CD !important;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2E4EAB !important;
+    border-color: #2E4EAB !important;
+    color: white;
+}

@@ -1,0 +1,135 @@
+% !TeX spellcheck = nl_NL
+
+\documentclass[a4paper]{article}
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Wekelijks Verslag Team \arabic{team}}
+		\moderation{Robin Dillen (Co\"ordinator)}
+		\minutetaker{Robin Dillen}
+		\participant{Elias Dams, Robin Dillen}
+		\missingNoExcuse{}
+		\missingExcused{Pablo Deputter, Cédric Leclercq, Robbe Nooyens}
+%		\guest{\ldots}
+		\minutesdate{8 maart 2022}
+		\starttime{15:30}
+		\endtime{16:30u}
+		
+		\maketitle
+		
+		\topic{Aflijning GUI}
+			\emph{Een duidelijke overview van wat er in de verschillende paginas aanwezig moet zijn.}
+			\subtopic{Home page}
+			De pagina waar een (web)user opkomt wanneer deze nog niet is ingelogt. Deze pagina zal een logo bevatten, login/registreer knop en een table van de top-k recommendation algoritmes.
+			
+			\subtopic{login/registratie pagina}
+			De pagina waar een (web)user opkomt wanneer deze wil inloggen of registreren. Dit kan in de vorm van een modal of een nieuwe webpagina. Voor te registreren zal de user een naam, gebruikersnaam en email. Voor in te loggen moet de user gebruikersnaam/email en password meegeven.
+			
+			\subtopic{main pagina/dashboard}
+			De user zal naar deze pagina worden gestuurd wanneer er word ingelogd. Op deze Pagina zal een sidebar, een workspace en een logout knop aanwezig zijn. 
+			
+			\subtopic{main pagina/dashboard: sidebar}
+			De sidebar van de main pagina zal knoppen/drop down menu's bevatten van o.a. A/B tests, Datasets, ...
+			
+			\subtopic{Catalogus: overview}
+			De catalogus zal een overview geven van alle producten in de gegeven dataset. We kunnen deze overview zien als een 'webshop' pagina. We zullen dus de mogelijkheid hebben om te sorteren, filteren en zoeken naar bepaalde producten.
+			
+			\subtopic{Catalogus: product overview}
+			Wanneer we op een item in de catalogus klikken zullen we naar deze pagina worden gestuurd. Op deze pagina zal verschillende info komen over het product(grafiekjes enzo)
+			
+			\subtopic{A/B tests}
+			Deze pagina zal een dashbord zijn a la Jenkins. We zullen dus testen kunnen aanmaken(verschillende configuraties), starten en stoppen. Verder zullen we ook een overview maken waar de we alle voorbije en huidige testen kunnen bekijken?
+		
+		\topic{Status}
+			\emph{Overloop status taken, afgesproken tijdens vorige vergadering.}
+		
+			\subtopic{Taken (iedereen)}
+				\task*[pending]{apiary.io API testing}
+				\task*[pending]{Design pattern decisions}
+				\task*[pending]{Back-end design}
+				\task*[pending]{Database design en verbinden}
+				\task*[pending]{Uittekenen van volledige GUI}
+				\task*[pending]{Eerste tussentijds rapport DEADLINE 13/03/2022}
+				\task*[done]{Front-end design}
+				\task*[done]{Template webapp werkend krijgen DEADLINE 01/03/2022}
+				\task*[done]{Documentatie bekijken van technologiën}
+			
+			\subtopic{Taken (Elias Dams) DEADLINE 13/03/2022}
+				\task*[pending]{login}
+				\task*[pending]{main page sidebar}
+				\task*[pending]{A/B test overview}
+				
+			\subtopic{Taken (Robbe Nooyens) DEADLINE 13/03/2022}
+				\task*[pending]{Home page}
+				\task*[pending]{catalogus: product overview}
+				\task*[pending]{A/B test overview}
+				
+			\subtopic{Taken (Pablo deputter) DEADLINE 13/03/2022}
+				\task*[pending]{main page sidebar}
+				\task*[pending]{catalogus: overview}
+				\task*[pending]{A/B test overview}
+				
+			\subtopic{Taken (Cédric Leclercq) DEADLINE 13/03/2022}
+				\task*[pending]{main}
+				\task*[pending]{catalogus: product overview}
+				\task*[pending]{A/B test overview}
+				
+			\subtopic{Taken (Robin Dillen) DEADLINE 13/03/2022}
+				\task*[pending]{main}
+				\task*[pending]{catalogus: overview}
+				\task*[pending]{A/B test overview}
+			
+
+			
+		\topic{Besproken Onderwerpen}
+			\emph{We hebben het front-end design overlopen, en alle belangrijke punten opgesomd die in de voorbije week zijn verteld. Verder hebben we nog concreet de taken verdeelt onder de groep met duidelijke deadlines.}
+		
+		\topic{Afspraken \& Planning}
+			\emph{zie taken}
+		
+		
+		\topic{Varia}
+			\emph{We hebben in het weekend een fysieke meeting gehouden waar Elias Dams niet bij kon zijn, ook niet virtueel. Dus deze meeting is om te zorgen dat alles netjes neergeschreven staat en dat Elias mee is met de vordering in het project.}
+
+		
+		\blfootnote{
+			\href{%
+				mailto:joey.depauw@uantwerpen.be%
+				?subject=PPDB 2021-2022: Wekelijks Verslag Team \arabic{team}%
+				&body=Liefste Joey\%0D\%0A%
+				\%0D\%0A%
+				Gelieve ons wekelijks verslag terug te vinden in de bijlage.\%0D\%0A%
+				\%0D\%0A%
+				Groetjes\%0D\%0A%
+				Team \arabic{team}\%0D\%0A%
+			}{Klik hier} om mij op te sturen.
+		}
+		
+		
+	\end{Minutes}	
+\end{document}

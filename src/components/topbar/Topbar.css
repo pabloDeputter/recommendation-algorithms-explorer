@@ -1,0 +1,19 @@
+.UserIcon.UserIcon {
+    background-color: transparent !important;
+    color: black !important;
+    border: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+}
+
+
+.UserIcon.UserIcon:hover {
+    background-color: transparent !important;
+    color: black !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+}

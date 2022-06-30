@@ -1,0 +1,34 @@
+https://dbdiagram.io/d/626199dd1072ae0b6ac7d2ae
+
+Table User {
+  id int [pk]
+  firstname varchar(255)
+  lastname varchar(255)
+  username varchar(255)
+  email varchar(255) unique
+  hashed_password varchar(255)
+}
+
+table DataSet {
+  name varchar(255)
+  created_by int
+  user_id int [pk]
+  item_id int
+  timestamp date
+  price int
+}
+
+Table DataSetUser {
+  user_id int [pk] // necessarry attribute
+  // specified metadata
+}
+
+Table DataSetItem {
+  item_id int [pk] // necessary attribute
+  // specified metadata
+}
+
+
+Ref: "DataSet"."created_by" > "User"."id"
+Ref: "DataSet"."user_id" > "DataSetUser"."user_id"
+Ref: "DataSet"."item_id" > "DataSetItem"."item_id"

@@ -1,0 +1,121 @@
+% !TeX spellcheck = nl_NL
+
+\documentclass[a4paper]{article}
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Wekelijks Verslag Team \arabic{team}}
+		\moderation{Pablo Deputter (Co\"ordinator)}
+		\minutetaker{Pablo Deputter}
+		\participant{Elias Dams, Pablo Deputter, Robbe Nooyens, Cédric Leclercq en Robin Dillen}
+		\missingNoExcuse{\ldots}
+		\missingExcused{\ldots}
+		\guest{Victor}
+		\minutesdate{22 februari 2022}
+		\starttime{13}
+		\endtime{14u}
+		
+		\maketitle
+		
+		
+		\topic{Technologiën}
+		Technologiën die we gebruiken:
+		\begin{itemize}
+		    \item Flask + Python voor de webserver en backend
+		    \item React voor de frontend
+		    \item Bootstrap als css framework of styling
+		    \item Matplotlib als dit mogelijk is anders gebruiken we Google charts
+		    \item Om onze API's te testen maken we gebruik van Apiary
+		    \item We zullen gebruik maken van Github om version control toe te passen
+		    \item Voorlopig hebben we beslist om PyTest voor de testen
+		    \item Voor het plannen van het project en taken op te leggen gebruiken we Trello
+		\end{itemize}
+		
+		\topic{Status}
+			\emph{Overloop status taken, afgesproken tijdens vorige vergadering.}
+		
+			\subtopic{Taken (iedereen)}
+				\task*[pending]{Template webapp werkend krijgen DEADLINE 01/03/2022}
+				\task*[pending]{Documentatie bekijken van technologiën}
+				\task*[pending]{Uittekenen van GUI, database, ...}
+				\task*[pending]{Eerste tussentijds rapport DEADLINE 13/03/2022}
+			
+
+			
+		\topic{Besproken Onderwerpen}
+			\emph{Overloop de afspraken van de vorige vergadering en bespreek de status. Wees altijd vriendelijk en professioneel. Maak een agenda met onderwerpen die best besproken worden. Beperk discussies tot redelijke tijd, en parkeer ze als een discussie te lang aansleept.}
+			
+			\subtopic{Voorbeeld Discussie}
+				\begin{Opinions}
+					\item[Persoon 1] We should continue to have coffee at 11:00am.
+					\item[Persoon 2] We should move the coffee break to an earlier
+					time.
+				\end{Opinions}
+				
+				\begin{Argumentation}
+					\pro We've always had coffee at 11:00am. There's no
+					need to change it.
+					\contra 11:00am is too long a wait for the caffeine
+					addicts.
+					\Pro Coffee at 10:30am would interfere with our clandestine
+					experiments scheduled at that time.
+					\item Prof said it would be better to have tea
+					instead of coffee.
+					\result The coffee break will continue to be at 11:00am.
+				\end{Argumentation}
+				
+			\subtopic{Voorbeeld Stemming}
+				\begin{Vote}
+					\vote{Maintain coffee at 11am?}{2}{1}{1}
+					\vote{Move clandestine experiments to after lunch?}{1}{3}{0}
+				\end{Vote}
+		
+		\topic{Afspraken \& Planning}
+			\emph{Update de volledige takenlijst voor het project. Maak dan een samenhorende, realistische keuze voor taken, die volgende week ge\"implementeerd/afgewerkt moeten worden. Een slimme afspraak is specifiek, duidelijk afgelijnd, en haalbaar. Als gebruik gemaakt wordt van een andere planning tool, kan je screenshots toevoegen.}
+		
+		
+		\topic{Varia}
+			\emph{Eventuele varia punten.}
+
+		
+		\blfootnote{
+			\href{%
+				mailto:joey.depauw@uantwerpen.be%
+				?subject=PPDB 2021-2022: Wekelijks Verslag Team \arabic{team}%
+				&body=Liefste Joey\%0D\%0A%
+				\%0D\%0A%
+				Gelieve ons wekelijks verslag terug te vinden in de bijlage.\%0D\%0A%
+				\%0D\%0A%
+				Groetjes\%0D\%0A%
+				Team \arabic{team}\%0D\%0A%
+			}{Klik hier} om mij op te sturen.
+		}
+		
+		
+	\end{Minutes}	
+\end{document}

@@ -1,0 +1,112 @@
+% !TeX spellcheck = nl_NL
+
+\documentclass[a4paper]{article}
+
+
+\usepackage[urlcolor=blue, linkcolor=black, colorlinks=true]{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{minutes}
+
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\makeatletter
+\addto\extrasdutch{%
+\def\min@textTask{Taak}%
+}
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+
+
+\newcounter{team}
+
+% TODO: Enter team number here:
+\setcounter{team}{5}
+
+
+\begin{document}
+%	\tableofcontents
+	
+	\begin{Minutes}{Programming Project Databases \\ Wekelijks Verslag Team \arabic{team}}
+		\moderation{Cédric Leclercq (Co\"ordinator)}
+		\minutetaker{Cédric Leclercq}
+		\participant{Elias Dams, Pablo Deputter, Robbe Nooyens, Cédric Leclercq en Robin Dillen}
+		\missingNoExcuse{\ldots}
+		\missingExcused{\ldots}
+		\minutesdate{1 maart 2022}
+		\starttime{15}
+		\endtime{16u}
+		
+		\maketitle
+		
+		
+		\topic{Technologiën}
+		Technologiën die we gebruiken:
+		\begin{itemize}
+		    \item Flask + Python voor de webserver en backend
+		    \item React voor de frontend
+		    \item Bootstrap als css framework of styling
+		    \item Matplotlib als dit mogelijk is anders gebruiken we Google charts
+		    \item Om onze API's te testen maken we gebruik van Apiary
+		    \item We zullen gebruik maken van Github om version control toe te passen
+		    \item Voorlopig hebben we beslist om PyTest voor de testen
+		    \item Voor het plannen van het project en taken op te leggen gebruiken we Trello
+		\end{itemize}
+		
+		\topic{Status}
+			\emph{Overloop status taken, afgesproken tijdens vorige vergadering.}
+		
+			\subtopic{Taken (iedereen)}}
+				\task*[pending]{apiary.io API testing}
+				\task*[pending]{Design pattern decisions}
+				\task*[pending]{Back-end design}
+				\task*[pending]{Front-end design}
+				\task*[pending]{Database design en verbinden}
+				\task*[pending]{Uittekenen van volledige GUI}
+				\task*[pending]{Eerste tussentijds rapport DEADLINE 13/03/2022}
+				\task*[done]{Template webapp werkend krijgen DEADLINE 01/03/2022}
+				\task*[done]{Documentatie bekijken van technologiën}
+
+			
+		\topic{Besproken Onderwerpen}
+			\emph{Overloop de afspraken van de vorige vergadering en bespreek de status. Wees altijd vriendelijk en professioneel. Maak een agenda met onderwerpen die best besproken worden. Beperk discussies tot redelijke tijd, en parkeer ze als een discussie te lang aansleept.}
+			
+			\subtopic{Discussies}
+				Geen.
+				
+			\subtopic{Stemmingen}
+				\begin{Vote}
+					\vote{Morgen lang samen doorwerken?}{4}{1}{0}
+					\vote{Vandaag lang samen doorwerken?}{1}{4}{0}
+				\end{Vote}
+
+		
+		\topic{Afspraken \& Planning}
+			\emph{Update de volledige takenlijst voor het project. Maak dan een samenhorende, realistische keuze voor taken, die volgende week ge\"implementeerd/afgewerkt moeten worden. Een slimme afspraak is specifiek, duidelijk afgelijnd, en haalbaar. Als gebruik gemaakt wordt van een andere planning tool, kan je screenshots toevoegen.}
+		
+		
+		\topic{Varia}
+			\emph{Eventuele varia punten.}\\
+
+			
+
+		
+		\blfootnote{
+			\href{%
+				mailto:joey.depauw@uantwerpen.be%
+				?subject=PPDB 2021-2022: Wekelijks Verslag Team \arabic{team}%
+				&body=Liefste Joey\%0D\%0A%
+				\%0D\%0A%
+				Gelieve ons wekelijks verslag terug te vinden in de bijlage.\%0D\%0A%
+				\%0D\%0A%
+				Groetjes\%0D\%0A%
+				Team \arabic{team}\%0D\%0A%
+			}{Klik hier} om mij op te sturen.
+		}
+		
+		
+	\end{Minutes}	
+\end{document}

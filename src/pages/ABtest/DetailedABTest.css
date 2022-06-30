@@ -1,0 +1,20 @@
+.svg-button {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Button.off, input[type="submit"], input[type="reset"] {
+    background: none !important;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+Button.off:hover {
+    background: none !important;
+}
